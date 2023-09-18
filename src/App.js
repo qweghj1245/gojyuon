@@ -77,7 +77,7 @@ function App() {
       ))}
       <div className="wrapper">
         <div>全部題數: {questions.length}</div>
-        <div>問題: {test.length > 0 ? test[test.length - 1].japanese : ''}</div>
+        <div>問題: {test.length > 0 ? `${test[test.length - 1].chinese}(${test[test.length - 1].japanese})` : ''}</div>
         <div>
           <span>答案: </span>
           <input type="text" value={answer} onChange={(e) => setAnswer(e.target.value)} />
